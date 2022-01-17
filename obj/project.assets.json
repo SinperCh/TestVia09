@@ -1,43 +1,219 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "Newtonsoft.Json/12.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/5.0.0-rc1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "NLog.Config/4.7.13": {
+        "type": "package",
+        "dependencies": {
+          "NLog": "4.7.13",
+          "NLog.Schema": "4.7.13"
+        },
+        "contentFiles": {
+          "contentFiles/any/any/NLog.config": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": true,
+            "outputPath": "NLog.config"
+          }
+        }
+      },
+      "NLog.Schema/4.7.13": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "Packable/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.2/Packable.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.2/Packable.dll": {}
+        }
+      },
+      "Packable.newtonjson/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "Packable": "6.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Packable.newtonjson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Packable.newtonjson.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Newtonsoft.Json/12.0.1": {
+      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.pdb",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.pdb",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.pdb",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.pdb",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.pdb",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "NLog/5.0.0-rc1": {
+      "sha512": "+ce3zuXplax1HLxFieqA7BwxLjdmZacYblz6AcfrqxfFWytMz9SHBwUas45aamVrQhTKUA4m5la464/RxnCZPg==",
+      "type": "package",
+      "path": "nlog/5.0.0-rc1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.0.0-rc1.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "NLog.Config/4.7.13": {
+      "sha512": "A7i8bS0SLd7A1y9BkyOBpIdfC91aqzJfOfHXi9xXs12s6rb9f2xYRQde2Pcpso+YrcybCR2lqczNdb/pKSqoEg==",
+      "type": "package",
+      "path": "nlog.config/4.7.13",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.config",
+        "contentFiles/any/any/NLog.config",
+        "nlog.config.4.7.13.nupkg.sha512",
+        "nlog.config.nuspec",
+        "tools/Install.ps1"
+      ]
+    },
+    "NLog.Schema/4.7.13": {
+      "sha512": "IlbHsTRzA1YeAbrJTVETZRWkYXqo5YnaF/ppJBdE6kKD4/IjuA0CUaZMSQKbOLzwxGARMx3An1V38zjGEjRekA==",
+      "type": "package",
+      "path": "nlog.schema/4.7.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NLog.xsd",
+        "contentFiles/any/any/NLog.xsd",
+        "nlog.schema.4.7.13.nupkg.sha512",
+        "nlog.schema.nuspec"
+      ]
+    },
+    "Packable/6.2.0": {
+      "sha512": "ZXdZF5AbQD7iuNXiCPgphoyjoMRQEj9/KLShkv4kmQeaEl7w38365KyP8C+y1rRDMAe4fJvA88//aaBqBvD8Sg==",
+      "type": "package",
+      "path": "packable/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net46/Packable.dll",
+        "lib/netcoreapp2.2/Packable.dll",
+        "lib/netstandard2.0/Packable.dll",
+        "packable.6.2.0.nupkg.sha512",
+        "packable.nuspec"
+      ]
+    },
+    "Packable.newtonjson/2.0.0": {
+      "sha512": "RVOiNvByTU+NXyVA2Kp5nP5Kwu5Twe+ALOYdXuE23HXZVMWbeobYhB++UkdFB6NRKuUvgTyC5P+d9p3ONnj5oA==",
+      "type": "package",
+      "path": "packable.newtonjson/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Packable.newtonjson.dll",
+        "packable.newtonjson.2.0.0.nupkg.sha512",
+        "packable.newtonjson.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "NLog >= 5.0.0-rc1",
+      "NLog.Config >= 4.7.13",
+      "Packable.newtonjson >= 2.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\sinpe\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\ViaTest\\wap\\wap.csproj",
+      "projectUniqueName": "E:\\OneDrive\\ViaTest\\wap\\wap.csproj",
       "projectName": "wap",
-      "projectPath": "D:\\OneDrive\\ViaTest\\wap\\wap.csproj",
-      "packagesPath": "C:\\Users\\sinpe\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\ViaTest\\wap\\obj\\",
+      "projectPath": "E:\\OneDrive\\ViaTest\\wap\\wap.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\OneDrive\\ViaTest\\wap\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\sinpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -55,6 +231,20 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "NLog": {
+            "target": "Package",
+            "version": "[5.0.0-rc1, )"
+          },
+          "NLog.Config": {
+            "target": "Package",
+            "version": "[4.7.13, )"
+          },
+          "Packable.newtonjson": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

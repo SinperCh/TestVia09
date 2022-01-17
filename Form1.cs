@@ -1,3 +1,4 @@
+
 namespace wap;
 
 public partial class Form1 : Form
@@ -25,14 +26,22 @@ public partial class Form1 : Form
 
        for(int i=0;i<panel.RowCount;i++){
            for(int j=0;j<panel.ColumnCount;j++){
-               Label lbl=new Label();
+              /* Label lbl=new Label();
                lbl.Dock=DockStyle.Fill;
                lbl.Padding=new Padding(1,1,1,1);
                lbl.AutoSize=false;
                lbl.Text="test";
                lbl.TextAlign=ContentAlignment.MiddleCenter;
                lbl.BackColor=Color.BlueViolet;
-               panel.Controls.Add(lbl,j,i);
+               panel.Controls.Add(lbl,j,i);*/
+
+               //Button btn=new Button();
+
+               Label lbl=new Label();
+               lbl.Dock=DockStyle.Fill;
+               lbl.BackColor=Color.Red;
+               lbl.AutoSize=false;
+            panel.Controls.Add(lbl,j,i);
            }
        }
        this.Controls.Add(panel);

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "1m9ddRrPb5w2Xnl2Vx0D37/A51iuRhAkgRqLxHUM23RmzYDrs/JpSaaBrKFJqRR1Wrkz4RbG1z3xH108iUcOZg==",
+  "dgSpecHash": "fTxf0xE6u47VWuuUEEU+szaPi9QlWMDzREKIxOAKoQn77fHmdftKKHF6PffkeTXwypjBlX65PvgUFE90GrIJ2A==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\ViaTest\\wap\\wap.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\OneDrive\\ViaTest\\wap\\wap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\5.0.0-rc1\\nlog.5.0.0-rc1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog.config\\4.7.13\\nlog.config.4.7.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog.schema\\4.7.13\\nlog.schema.4.7.13.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\packable\\6.2.0\\packable.6.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\packable.newtonjson\\2.0.0\\packable.newtonjson.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
