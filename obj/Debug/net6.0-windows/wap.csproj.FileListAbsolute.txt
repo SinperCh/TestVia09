@@ -1,0 +1,15 @@
+D:\OneDrive\ViaTest\wap\bin\Debug\net6.0-windows\wap.exe
+D:\OneDrive\ViaTest\wap\bin\Debug\net6.0-windows\wap.deps.json
+D:\OneDrive\ViaTest\wap\bin\Debug\net6.0-windows\wap.runtimeconfig.json
+D:\OneDrive\ViaTest\wap\bin\Debug\net6.0-windows\wap.dll
+D:\OneDrive\ViaTest\wap\bin\Debug\net6.0-windows\ref\wap.dll
+D:\OneDrive\ViaTest\wap\bin\Debug\net6.0-windows\wap.pdb
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.csproj.AssemblyReference.cache
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.AssemblyInfoInputs.cache
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.AssemblyInfo.cs
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.csproj.CoreCompileInputs.cache
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.dll
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\ref\wap.dll
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.pdb
+D:\OneDrive\ViaTest\wap\obj\Debug\net6.0-windows\wap.genruntimeconfig.cache
